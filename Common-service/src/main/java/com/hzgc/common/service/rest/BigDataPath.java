@@ -26,6 +26,7 @@ public class BigDataPath {
     public static final String CLUSTERING_DETAILSEARCH_V1 = "/clustering_detail";
     public static final String CLUSTERING_DELETE = "/clustering_delete";
     public static final String CLUSTERING_IGNORE = "/clustering_ignore";
+    public static final String CLUSTERING_REALNAME ="/clustering_realname";
 
     /**
      * Device模块请求路径
