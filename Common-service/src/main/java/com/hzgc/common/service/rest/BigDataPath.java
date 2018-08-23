@@ -21,11 +21,12 @@ public class BigDataPath {
     /**
      * Clustering模块请求路径
      */
-    public static final String CLUSTERING_SEARCH = "/clustering_search";
-    public static final String CLUSTERING_TOTLE = "/clustering_totle";
-    public static final String CLUSTERING_DETAILSEARCH_V1 = "/clustering_detail";
-    public static final String CLUSTERING_DELETE = "/clustering_delete";
-    public static final String CLUSTERING_IGNORE = "/clustering_ignore";
+    public static final String PEOPLEMANAGER_SEARCH = "/peoplemanager_search";
+    public static final String PEOPLEMANAGER_TOTLE = "/peoplemanager_totle";
+    public static final String PEOPLEMANAGER_DETAILSEARCH_V1 = "/peoplemanager_detail";
+    public static final String PEOPLEMANAGER_DELETE = "/peoplemanager_delete";
+    public static final String PEOPLEMANAGER_IGNORE = "/peoplemanager_ignore";
+    public static final String PEOPLEMANAGER_REALNAME ="/peoplemanager_realname";
 
     /**
      * Device模块请求路径
