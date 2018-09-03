@@ -71,7 +71,6 @@ public class ImageToData {
                 imageResult.setVehicleList(vehicleList);
                 imageResult.setPersonList(personList);
             }
-            System.out.println(JSON.toJSONString(imageResult));
             return imageResult;
         }
         return null;
