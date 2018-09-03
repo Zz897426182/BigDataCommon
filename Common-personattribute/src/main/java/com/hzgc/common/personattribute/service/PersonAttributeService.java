@@ -197,7 +197,7 @@ public class PersonAttributeService {
         //肩上的包
         Map<Integer ,String> shoudlerBag = personMap.get("shoulderbag_code");
         PersonAttribute personShoudlerBag= new PersonAttribute();
-        personShoudlerBag.setIdentify("umbrella_code");
+        personShoudlerBag.setIdentify("shoulderBag");
         personShoudlerBag.setDesc("肩上的包");
         personShoudlerBag.setPersonLogistic(PersonLogistic.AND);
         List<PersonAttributeValue> personShoudlerBagValues = new ArrayList<>();
