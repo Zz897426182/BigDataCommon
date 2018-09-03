@@ -135,6 +135,7 @@ public class ReadCarInfo {
         HashMap<Integer, String> otherPropertis = new HashMap<>();
         otherPropertis.put(1, "无");
         otherPropertis.put(2, "有");
+        otherPropertis.put(3, "不确定");
         return otherPropertis;
     }
 
