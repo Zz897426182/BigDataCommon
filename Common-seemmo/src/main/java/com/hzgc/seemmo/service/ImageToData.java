@@ -71,6 +71,7 @@ public class ImageToData {
                 imageResult.setVehicleList(vehicleList);
                 imageResult.setPersonList(personList);
             }
+            System.out.println(JSON.toJSONString(imageResult));
             return imageResult;
         }
         return null;
@@ -538,5 +539,10 @@ public class ImageToData {
 
 //    public static void main(String[] args) {
 //        ImageToData.getImageResult("http://172.18.18.139:8000/?cmd=recogPic", "C:\\Users\\g10255\\Desktop\\2018_08_31_15_45_59_591_赣AA1115_0.jpg", "66");
+//    }
+
+//    public static void main(String[] args) {
+//        byte[] bytes = JsonUtil.fileToByteArray("C:\\Users\\g10255\\Desktop\\2018_08_31_15_45_59_591_赣AA1115_0.jpg");
+//        ImageToData.getImageResult("http://172.18.18.139:8000/?cmd=recogPic",bytes,"66");
 //    }
 }
