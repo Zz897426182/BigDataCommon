@@ -526,7 +526,6 @@ public class ImageToData {
     public static ImageResult getImageResult(String url, String imagePath, String tag) {
         String imageJsonString = JsonUtil.objectToJsonString(imagePath);
         String s = ImageToData.executeHttpPost(url, imageJsonString);
-        System.out.println(s);
         return ImageToData.getData(s, imagePath, tag, null);
     }
 
@@ -535,8 +534,4 @@ public class ImageToData {
         String s = ImageToData.executeHttpPost(url, imageJsonString);
         return ImageToData.getData(s, null, tag, bytes);
     }
-
-//        public static void main(String[] args) {
-//        ImageToData.getImageResult("http://172.18.18.138:8000/?cmd=recogPic", "C:\\Users\\g10255\\Desktop\\2018_08_31_15_45_59_591_赣AA1115_0.jpg", "66");
-//    }
 }
