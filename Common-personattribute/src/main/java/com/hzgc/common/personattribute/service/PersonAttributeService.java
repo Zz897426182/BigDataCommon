@@ -22,7 +22,7 @@ public class PersonAttributeService {
         Map<Integer ,String> ageMap = personMap.get("age_code");
         PersonAttribute personAge =new PersonAttribute();
         personAge.setIdentify("age");
-        personAge.setDesc("行人的年龄");
+        personAge.setDesc("年龄");
         personAge.setPersonLogistic(PersonLogistic.AND);
         List<PersonAttributeValue> personAgeValues = new ArrayList<>();
         for (Map.Entry<Integer,String> entry : ageMap.entrySet()){
@@ -38,7 +38,7 @@ public class PersonAttributeService {
         Map<Integer ,String> babyMap = personMap.get("baby_code");
         PersonAttribute personBaby = new PersonAttribute();
         personBaby.setIdentify("baby");
-        personBaby.setDesc("抱小孩类型");
+        personBaby.setDesc("抱小孩");
         personBaby.setPersonLogistic(PersonLogistic.AND);
         List<PersonAttributeValue> personBabyValues = new ArrayList<>();
         for (Map.Entry<Integer,String> entry : babyMap.entrySet()){
@@ -134,7 +134,7 @@ public class PersonAttributeService {
         Map<Integer ,String> knapsackMap = personMap.get("knapsack_code");
         PersonAttribute personKnapsack = new PersonAttribute();
         personKnapsack.setIdentify("knapsack");
-        personKnapsack.setDesc("背包类型");
+        personKnapsack.setDesc("双肩包");
         personKnapsack.setPersonLogistic(PersonLogistic.AND);
         List<PersonAttributeValue> personKnapsackValues = new ArrayList<>();
         for (Map.Entry<Integer,String> entry : knapsackMap.entrySet()){
@@ -150,7 +150,7 @@ public class PersonAttributeService {
         Map<Integer ,String> messengerBag = personMap.get("messengerbag_code");
         PersonAttribute personMessengerBag = new PersonAttribute();
         personMessengerBag.setIdentify("messengerBag");
-        personMessengerBag.setDesc("背包方式");
+        personMessengerBag.setDesc("斜挎包");
         personMessengerBag.setPersonLogistic(PersonLogistic.AND);
         List<PersonAttributeValue> personMessenegerBagValues = new ArrayList<>();
         for (Map.Entry<Integer,String> entry : messengerBag.entrySet()){
@@ -166,7 +166,7 @@ public class PersonAttributeService {
         Map<Integer ,String> orientation = personMap.get("orientation_code");
         PersonAttribute personOrientationBag = new PersonAttribute();
         personOrientationBag.setIdentify("orientation");
-        personOrientationBag.setDesc("行人方向");
+        personOrientationBag.setDesc("朝向");
         personOrientationBag.setPersonLogistic(PersonLogistic.AND);
         List<PersonAttributeValue> personOrientationValues = new ArrayList<>();
         for (Map.Entry<Integer,String> entry : orientation.entrySet()){
@@ -198,7 +198,7 @@ public class PersonAttributeService {
         Map<Integer ,String> shoudlerBag = personMap.get("shoulderbag_code");
         PersonAttribute personShoudlerBag= new PersonAttribute();
         personShoudlerBag.setIdentify("shoulderBag");
-        personShoudlerBag.setDesc("肩上的包");
+        personShoudlerBag.setDesc("单肩包");
         personShoudlerBag.setPersonLogistic(PersonLogistic.AND);
         List<PersonAttributeValue> personShoudlerBagValues = new ArrayList<>();
         for (Map.Entry<Integer,String> entry : shoudlerBag.entrySet()){
@@ -261,7 +261,7 @@ public class PersonAttributeService {
         //车辆类型
         Map<Integer ,String> type = personMap.get("car_type");
         PersonAttribute personCarType= new PersonAttribute();
-        personCarType.setIdentify("type");
+        personCarType.setIdentify("carType");
         personCarType.setDesc("车辆类型");
         personCarType.setPersonLogistic(PersonLogistic.AND);
         List<PersonAttributeValue> personCarTypeValues = new ArrayList<>();
