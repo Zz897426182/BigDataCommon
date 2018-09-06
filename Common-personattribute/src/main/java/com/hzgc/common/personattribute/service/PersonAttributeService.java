@@ -1,6 +1,6 @@
 package com.hzgc.common.personattribute.service;
 
-import com.hzgc.common.personattribute.bean.PersonAttribute;
+import com.hzgc.common.personattribute.bean.PersonAttributes;
 import com.hzgc.common.personattribute.bean.PersonAttributeValue;
 import com.hzgc.common.personattribute.bean.PersonLogistic;
 import com.hzgc.seemmo.service.ReadPersonInfo;
@@ -13,14 +13,14 @@ import java.util.Map;
  *行人属性查询
  */
 public class PersonAttributeService {
-    public List<PersonAttribute> getPersonAttribute(){
-        List<PersonAttribute> personAttributes = new ArrayList<>();
+    public List<PersonAttributes> getPersonAttribute(){
+        List<PersonAttributes> personAttributes = new ArrayList<>();
         ReadPersonInfo readPersonInfo = new ReadPersonInfo();
         Map<String,Map<Integer,String>> personMap = readPersonInfo.getPersonMap();
 
         //行人年龄
         Map<Integer ,String> ageMap = personMap.get("age_code");
-        PersonAttribute personAge =new PersonAttribute();
+        PersonAttributes personAge =new PersonAttributes();
         personAge.setIdentify("age");
         personAge.setDesc("年龄");
         personAge.setPersonLogistic(PersonLogistic.AND);
@@ -36,7 +36,7 @@ public class PersonAttributeService {
 
         //小孩类型
         Map<Integer ,String> babyMap = personMap.get("baby_code");
-        PersonAttribute personBaby = new PersonAttribute();
+        PersonAttributes personBaby = new PersonAttributes();
         personBaby.setIdentify("baby");
         personBaby.setDesc("抱小孩");
         personBaby.setPersonLogistic(PersonLogistic.AND);
@@ -52,7 +52,7 @@ public class PersonAttributeService {
 
         //拎东西
         Map<Integer ,String> bagMap = personMap.get("bag_code");
-        PersonAttribute personBag = new PersonAttribute();
+        PersonAttributes personBag = new PersonAttributes();
         personBag.setIdentify("bag");
         personBag.setDesc("拎东西");
         personBag.setPersonLogistic(PersonLogistic.AND);
@@ -68,7 +68,7 @@ public class PersonAttributeService {
 
         //下衣颜色
         Map<Integer ,String> bottomColorMap = personMap.get("bottomcolor_code");
-        PersonAttribute personBottomColor = new PersonAttribute();
+        PersonAttributes personBottomColor = new PersonAttributes();
         personBottomColor.setIdentify("bottomColor");
         personBottomColor.setDesc("下衣颜色");
         personBottomColor.setPersonLogistic(PersonLogistic.AND);
@@ -84,7 +84,7 @@ public class PersonAttributeService {
 
         //下衣类型
         Map<Integer ,String> bottomTypeMap = personMap.get("bottomtype_code");
-        PersonAttribute personBottomType = new PersonAttribute();
+        PersonAttributes personBottomType = new PersonAttributes();
         personBottomType.setIdentify("bottomType");
         personBottomType.setDesc("下衣类型");
         personBottomType.setPersonLogistic(PersonLogistic.AND);
@@ -100,7 +100,7 @@ public class PersonAttributeService {
 
         //帽子类型
         Map<Integer ,String> hatMap = personMap.get("hat_code");
-        PersonAttribute personHat = new PersonAttribute();
+        PersonAttributes personHat = new PersonAttributes();
         personHat.setIdentify("hat");
         personHat.setDesc("帽子");
         personHat.setPersonLogistic(PersonLogistic.AND);
@@ -116,7 +116,7 @@ public class PersonAttributeService {
 
         //头发类型
         Map<Integer ,String> hairMap = personMap.get("hair_code");
-        PersonAttribute personHair = new PersonAttribute();
+        PersonAttributes personHair = new PersonAttributes();
         personHair.setIdentify("hair");
         personHair.setDesc("头发");
         personHair.setPersonLogistic(PersonLogistic.AND);
@@ -132,7 +132,7 @@ public class PersonAttributeService {
 
         //背包类型
         Map<Integer ,String> knapsackMap = personMap.get("knapsack_code");
-        PersonAttribute personKnapsack = new PersonAttribute();
+        PersonAttributes personKnapsack = new PersonAttributes();
         personKnapsack.setIdentify("knapsack");
         personKnapsack.setDesc("双肩包");
         personKnapsack.setPersonLogistic(PersonLogistic.AND);
@@ -148,7 +148,7 @@ public class PersonAttributeService {
 
         //背包方式
         Map<Integer ,String> messengerBag = personMap.get("messengerbag_code");
-        PersonAttribute personMessengerBag = new PersonAttribute();
+        PersonAttributes personMessengerBag = new PersonAttributes();
         personMessengerBag.setIdentify("messengerBag");
         personMessengerBag.setDesc("斜挎包");
         personMessengerBag.setPersonLogistic(PersonLogistic.AND);
@@ -164,7 +164,7 @@ public class PersonAttributeService {
 
         //行人方向
         Map<Integer ,String> orientation = personMap.get("orientation_code");
-        PersonAttribute personOrientationBag = new PersonAttribute();
+        PersonAttributes personOrientationBag = new PersonAttributes();
         personOrientationBag.setIdentify("orientation");
         personOrientationBag.setDesc("朝向");
         personOrientationBag.setPersonLogistic(PersonLogistic.AND);
@@ -180,7 +180,7 @@ public class PersonAttributeService {
 
         //性别
         Map<Integer ,String> sex = personMap.get("sex_code");
-        PersonAttribute personSex = new PersonAttribute();
+        PersonAttributes personSex = new PersonAttributes();
         personSex.setIdentify("sex");
         personSex.setDesc("性别");
         personSex.setPersonLogistic(PersonLogistic.AND);
@@ -196,7 +196,7 @@ public class PersonAttributeService {
 
         //肩上的包
         Map<Integer ,String> shoudlerBag = personMap.get("shoulderbag_code");
-        PersonAttribute personShoudlerBag= new PersonAttribute();
+        PersonAttributes personShoudlerBag= new PersonAttributes();
         personShoudlerBag.setIdentify("shoulderBag");
         personShoudlerBag.setDesc("单肩包");
         personShoudlerBag.setPersonLogistic(PersonLogistic.AND);
@@ -212,7 +212,7 @@ public class PersonAttributeService {
 
         //雨伞
         Map<Integer ,String> umbrella = personMap.get("umbrella_code");
-        PersonAttribute personUmbrella= new PersonAttribute();
+        PersonAttributes personUmbrella= new PersonAttributes();
         personUmbrella.setIdentify("umbrella");
         personUmbrella.setDesc("雨伞");
         personUmbrella.setPersonLogistic(PersonLogistic.AND);
@@ -228,7 +228,7 @@ public class PersonAttributeService {
 
         //上衣颜色
         Map<Integer ,String> upperColor = personMap.get("uppercolor_code");
-        PersonAttribute personUpperColor= new PersonAttribute();
+        PersonAttributes personUpperColor= new PersonAttributes();
         personUpperColor.setIdentify("upperColor");
         personUpperColor.setDesc("上衣颜色");
         personUpperColor.setPersonLogistic(PersonLogistic.AND);
@@ -244,7 +244,7 @@ public class PersonAttributeService {
 
         //上衣类型
         Map<Integer ,String> upperType = personMap.get("uppertype_code");
-        PersonAttribute personUpperType= new PersonAttribute();
+        PersonAttributes personUpperType= new PersonAttributes();
         personUpperType.setIdentify("upperType");
         personUpperType.setDesc("上衣类型");
         personUpperType.setPersonLogistic(PersonLogistic.AND);
@@ -260,7 +260,7 @@ public class PersonAttributeService {
 
         //车辆类型
         Map<Integer ,String> type = personMap.get("car_type");
-        PersonAttribute personCarType= new PersonAttribute();
+        PersonAttributes personCarType= new PersonAttributes();
         personCarType.setIdentify("carType");
         personCarType.setDesc("车辆类型");
         personCarType.setPersonLogistic(PersonLogistic.AND);
