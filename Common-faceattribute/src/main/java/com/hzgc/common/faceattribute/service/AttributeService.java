@@ -24,34 +24,6 @@ public class AttributeService {
      */
     public List<Attribute> getAttribute() {
         List<Attribute> attributeList = new ArrayList<>();
-            Attribute hairColor = new Attribute();
-            hairColor.setIdentify(HairColor.class.getSimpleName());
-            hairColor.setDesc("发色");
-            hairColor.setLogistic(Logistic.OR);
-            List<AttributeValue> hairColorValueList = new ArrayList<>();
-            for (HairColor hc : HairColor.values()) {
-                AttributeValue hairColorValue = new AttributeValue();
-                hairColorValue.setValue(hc.ordinal());
-                hairColorValue.setDesc(HairColor.getDesc(hc));
-                hairColorValueList.add(hairColorValue);
-            }
-            hairColor.setValues(hairColorValueList);
-            attributeList.add(hairColor);
-
-            Attribute hairStyle = new Attribute();
-            hairStyle.setIdentify(HairStyle.class.getSimpleName());
-            hairStyle.setDesc("发型");
-            hairStyle.setLogistic(Logistic.OR);
-            List<AttributeValue> hairStyleValueList = new ArrayList<>();
-            for (HairStyle hs : HairStyle.values()) {
-                AttributeValue hairStyleValue = new AttributeValue();
-                hairStyleValue.setValue(hs.ordinal());
-                hairStyleValue.setDesc(HairStyle.getDesc(hs));
-                hairStyleValueList.add(hairStyleValue);
-            }
-            hairStyle.setValues(hairStyleValueList);
-            attributeList.add(hairStyle);
-
             Attribute gender = new Attribute();
             gender.setIdentify(Gender.class.getSimpleName());
             gender.setDesc("性别");
@@ -65,34 +37,6 @@ public class AttributeService {
             }
             gender.setValues(genderValueList);
             attributeList.add(gender);
-
-            Attribute hat = new Attribute();
-            hat.setIdentify(Hat.class.getSimpleName());
-            hat.setDesc("帽子");
-            hat.setLogistic(Logistic.OR);
-            List<AttributeValue> hatValueList = new ArrayList<>();
-            for (Hat h : Hat.values()) {
-                AttributeValue hatValue = new AttributeValue();
-                hatValue.setValue(h.ordinal());
-                hatValue.setDesc(Hat.getDesc(h));
-                hatValueList.add(hatValue);
-            }
-            hat.setValues(hatValueList);
-            attributeList.add(hat);
-
-            Attribute tie = new Attribute();
-            tie.setIdentify(Tie.class.getSimpleName());
-            tie.setDesc("领带");
-            tie.setLogistic(Logistic.OR);
-            List<AttributeValue> tieValueList = new ArrayList<>();
-            for (Tie t : Tie.values()) {
-                AttributeValue tieValue = new AttributeValue();
-                tieValue.setValue(t.ordinal());
-                tieValue.setDesc(Tie.getDesc(t));
-                tieValueList.add(tieValue);
-            }
-            tie.setValues(tieValueList);
-            attributeList.add(tie);
 
             Attribute huzi = new Attribute();
             huzi.setIdentify(Huzi.class.getSimpleName());
