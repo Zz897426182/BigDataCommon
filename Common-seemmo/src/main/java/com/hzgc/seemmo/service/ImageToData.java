@@ -1,6 +1,5 @@
 package com.hzgc.seemmo.service;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.hzgc.seemmo.bean.ImageResult;
@@ -246,7 +245,6 @@ public class ImageToData {
                             try {
                                 byte[] bytes = cutImageUtil.cut();
                                 vehicle_object.setVehicle_data(bytes);
-                                System.out.println(JSON.toJSONString(vehicle_object));
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
@@ -535,8 +533,4 @@ public class ImageToData {
         String s = ImageToData.executeHttpPost(url, imageJsonString);
         return ImageToData.getData(s, null, tag, bytes);
     }
-
-//    public static void main(String[] args) {
-//        ImageToData.getImageResult("http://172.18.18.139:8000/?cmd=recogPic", "C:\\Users\\g10255\\Desktop\\2018_08_31_15_45_59_591_赣AA1115_0.jpg", "66");
-//    }
 }
