@@ -3,7 +3,7 @@ package com.hzgc.common.personattribute.bean;
 import java.io.Serializable;
 import java.util.List;
 
-public class PersonAttribute implements Serializable {
+public class PersonAttributes implements Serializable {
     private String desc;
     private String identify;
     private PersonLogistic personLogistic;
